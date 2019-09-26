@@ -13,6 +13,7 @@ import net.nata.pattern.example.step1.impl.RedheadDuck;
 @Slf4j
 @Configuration
 public class StrategyPatternInit {
+	//행위를 클래스로 캡슐화해 동적으로 행위를 자유롭게 바꿀 수 있게 해주는 패턴
 	//@PostConstruct
 	void init() {
 		log.info("-------------------------------");
