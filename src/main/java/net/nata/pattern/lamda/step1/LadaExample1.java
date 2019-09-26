@@ -15,7 +15,7 @@ public class LadaExample1 {
 	
 	//@PostConstruct
 	void init() {
-		log.info("---------------LadaExample1 START----------------");
+		log.info("---------------LamdaExample1 START----------------");
 		Runnable noArguments = () -> log.info("noArguments init");
 		noArguments.run();
 		
@@ -41,6 +41,6 @@ public class LadaExample1 {
 		
 		BinaryOperator<Long> addExplicit = (Long x,Long y) -> x-y;//함수 구현.
 		log.info("result4 : {}",addExplicit.apply(3L, 4L));
-		log.info("---------------LadaExample1 E N D----------------");
+		log.info("---------------LamdaExample1 E N D----------------");
 	}
 }

@@ -20,7 +20,7 @@ import net.nata.pattern.lamda.function.CustomFunction;
 public class LamdaExample2 {
 	@PostConstruct
 	void init() {
-		log.info("---------------LadaExample2 START----------------");
+		log.info("---------------LamdaExample2 START----------------");
 		
 		Predicate<Integer> test1 = (x) -> x>5;
 		log.info("result1 : {}",test1.test(3) ? "true닷" : "false 닷" );//반환형이 boolean
@@ -46,6 +46,6 @@ public class LamdaExample2 {
 		button.addActionListener(event -> log.info("task : {}",event.getActionCommand()));
 		
 		//BinaryOperator add = (x,y) -> x+y;//타입 명시가 되지 않아 컴파일 되지 않음
-		log.info("---------------LadaExample2 E N D----------------");
+		log.info("---------------LamdaExample2 E N D----------------");
 	}
 }
