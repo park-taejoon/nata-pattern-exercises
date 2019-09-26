@@ -29,3 +29,4 @@ public abstract class Duck {
 		this.quackBehavior = quackBehavior;
 	}
 }
+ 
