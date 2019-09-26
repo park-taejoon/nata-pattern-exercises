@@ -13,7 +13,7 @@ import net.nata.pattern.example.step1.impl.RedheadDuck;
 @Slf4j
 @Configuration
 public class StrategyPatternInit {
-	@PostConstruct
+	//@PostConstruct
 	void init() {
 		log.info("-------------------------------");
 		Duck duck = new MallardDuck();

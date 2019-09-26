@@ -7,7 +7,6 @@ import java.util.Objects;
 import java.util.stream.Stream;
 
 import lombok.Data;
-import lombok.NonNull;
 
 @Data
 public class Artist {
@@ -66,4 +65,6 @@ public class Artist {
 //        List<Artist> members = getMembers().map(Artist::copy).collect(toList());
 //        return new Artist(name, members, nationality);
 //    }
+
+	
 }

@@ -18,7 +18,7 @@ import net.nata.pattern.lamda.function.CustomFunction;
 @Slf4j
 @Component
 public class LamdaExample2 {
-	@PostConstruct
+	//@PostConstruct
 	void init() {
 		log.info("---------------LamdaExample2 START----------------");
 		

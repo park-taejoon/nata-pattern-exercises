@@ -6,7 +6,6 @@ import java.util.Objects;
 import java.util.stream.Stream;
 
 import static java.util.Collections.unmodifiableList;
-import static java.util.stream.Collectors.toList;
 
 public final class Album implements Performance {
     
