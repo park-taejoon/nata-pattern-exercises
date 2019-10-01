@@ -9,7 +9,7 @@ import net.nata.pattern.example.observer.impl.WeatherData;
 
 @Component
 public class ObserverConfig {
-	@PostConstruct
+	//@PostConstruct
 	void init() {
 		WeatherData weatherData = new WeatherData();
 		

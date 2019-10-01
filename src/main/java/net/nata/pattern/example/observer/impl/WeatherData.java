@@ -6,13 +6,13 @@ import net.nata.pattern.example.observer.Observer;
 import net.nata.pattern.example.observer.Subject;
 
 public class WeatherData implements Subject {
-	private ArrayList observers;
+	private ArrayList<Observer> observers;
 	private float temperature;
 	private float humidity;
 	private float pressure;
 	
 	public WeatherData() {
-		observers = new ArrayList();
+		observers = new ArrayList<>();
 	}
 	@Override
 	public void registerObserver(Observer o) {
@@ -31,7 +31,7 @@ public class WeatherData implements Subject {
 	@Override
 	public void notifyObservers() {
 		for (int i = 0; i < observers.size(); i++) {
-			Observer observer = (Observer)observers.get(i);
+			Observer observer = observers.get(i);
 			observer.update(temperature, humidity,pressure);
 		}
 	}
